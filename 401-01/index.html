@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="" id="name">
+        <p></p>
+        <button onclick="hello()" id="clickme">click me</button>
+    </div>
+
+    <script>
+        function hello(){
+            var name = document.getElementById("name").value
+            console.log(name);
+            var para = document.getElementsByTagName("p")
+            para[0].innerHTML = name
+        }
+    </script>
+</body>
+</html>
