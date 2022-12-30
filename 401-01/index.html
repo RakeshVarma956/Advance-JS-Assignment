@@ -9,16 +9,27 @@
 <body>
     <div>
         <input oninput="hello()" type="text" name="" id="name">
-        <p></p>
+        <h1></h1>
     </div>
 
     <script>
         function hello(){
             var name = document.getElementById("name").value
             console.log(name);
-            var para = document.getElementsByTagName("p")
+            var para = document.getElementsByTagName("h1")
             para[0].innerHTML = name
         }
     </script>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        input{
+            height: 30px;
+            border: 3px solid yellowgreen;
+            border-radius: 10px;
+        }
+    </style>
 </body>
 </html>
