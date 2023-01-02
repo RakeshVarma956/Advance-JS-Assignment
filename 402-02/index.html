@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            color: green;
+            font-size: 40px;
+        }
+        p{
+            font-weight: 600;
+        }
+        h2{
+            color: green;
+        }
+        img{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>Geekster</h1>
+        <p>Click on the button to add image element</p>
+        <button onclick="add()">Click here</button>
+        <h2 id="h2"></h2>
+        <img id="img" src="" alt="">
+    </div>
+
+    <script>
+        function add(){
+            var h2 = document.getElementById("h2")
+            h2.innerHTML = "Image Element Added"
+            var image = document.getElementsByTagName("img")
+            img.src = "https://o.remove.bg/downloads/beaaa088-9156-4cab-b4da-c2de8a38fb8f/download-removebg-preview.png"
+        }
+    </script>
+</body>
+</html>
