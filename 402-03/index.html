@@ -18,9 +18,25 @@
     <script>
         function add(){
             var input = document.getElementById("input").value
-            document.createElement("li")
-            
+            var list = document.createElement("li")
+            list.innerText = input
+            var button = document.createElement("button")
+            button.innerText = "Delete"
+            const listDiv = document.createElement("div")
+            listDiv.classList = "list"
+            listDiv.appendChild(list)
+            listDiv.appendChild(button)
+            console.log(listDiv);
+            var ul = document.getElementById("ul")
+            ul.appendChild(listDiv)
+            listDiv.style.display = "flex"
+            button.addEventListener("click",(event)=>{
+                listDiv.remove()
+            })
+            document.getElementById("input").value = ""
+           
         }
+       
     </script>
 </body>
 </html>
