@@ -55,5 +55,4 @@ async function fetch_info() {
 function clearFunc() {
     profileContainer.innerHTML = ""
     searchInput.value = ""
-    // func2()
 }
