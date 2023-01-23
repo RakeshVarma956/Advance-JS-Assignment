@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1b1d1d;
+}
+.main, .opt {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 40px;
+    color: white;
+    margin-right: 40px;
+}
+
+.opt h4 {
+    text-transform: uppercase;
+    margin-right: 50px;
+}
+
+body {
+    background-color: #212121;
+}
+
+.section-2 {
+    margin: 30px 30px;
+}
+
+.section-2 #go{
+    color: white;
+    border: 2px solid rgb(69, 68, 68);
+    padding-top: 0.45rem;
+    padding-bottom: 0.7rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-left: -0.5rem;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+h6 {
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    padding: 20px;
+    border: 1px;
+}
+
+.section-2 div {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px;
+    color: white;
+}
+
+.section-2 .searchbox{
+    gap: 20%;
+
+}
+
+label {
+    text-transform: uppercase;
+}
+
+input {
+    padding: 10px;
+    width: 40%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+img {
+    width: 75px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profileContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profileContainer .innerDiv {
+    background-color: #1b1d1d;
+    width: 300px;
+    height: auto;
+    box-shadow: 2px 2px 2px black;
+    padding: 20px
+}
+
+.profileContainer .innerDiv .info {
+    display: flex;
+    flex-direction: column;;
+}
+
+a {
+    text-decoration: none;
+    color: #9b9a9a;
+    text-transform: uppercase;
+    font-size: 14px;
+}
